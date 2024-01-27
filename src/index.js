@@ -14,6 +14,6 @@ res.sendFile(path.join(__dirname + "/Pages/home.html"))
 
 app.use(router)
 
-app.listen(3333 , (req, res)=>{
+app.listen( process.env.PORT || 3333 , (req, res)=>{
 console.log("Servidor Rodando!!!")
 })
